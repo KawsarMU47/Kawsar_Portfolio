@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- navbar start  -->
+    <nav class="bg-gray border-gray-200 dark:bg-gray-900  mt-249">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a  class="flex items-center">
+              <img src="_brand.png" class="h-8 mr-3" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" style="font-family: Rubik Puddles;">Kawsar</span>
+          </a>
+          <button id="menu-toggle" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="Index.html"  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page" >Certificates</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuItems = document.getElementById('navbar-default');
+    
+        menuToggle.addEventListener('click', () => {
+          menuItems.classList.toggle('hidden');
+        });
+      </script>
+     <!-- navbar End  -->
+
+
+<!-- card start -->
+
+
+<div class="container flex-wrap justify-center mx-auto my-8">
+
+<!-- <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+    <button type="button" class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800          inline-flex items-center px-1 py-1 ">
+        <img src="data:image/png;base64,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">
+        
+        Web Development</button>
+    <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Shoes</button>
+    <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Bags</button>
+    <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Electronics</button>
+    <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Gaming</button>
+</div> -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div>
+        
+        <a href="https://coursera.org/share/aa6201b937b5963e4e78a0f4764813d5">
+        <img class="h-auto max-w-full rounded-lg" src="UI_UX.png" alt="" >
+    </a>
+    <div> <span> <h6 class="flex  flex-col items-center mx-auto rounded" style="font-size: large; background-color: rgb(202, 201, 199); border-radius:100px;">Foundation of User Experinece(UI/UX)</h6></span></div>
+    </div>
+    <div>
+        <a href="https://coursera.org/share/b3f51f8f4b9bc031ef2bcf11893d56e2">
+            <img class="h-auto max-w-full rounded-lg" src="Ui_Ux.svg" alt="" >
+        </a>
+        <div> <span> <h6 class="flex  flex-col items-center mx-auto rounded" style="font-size: large; background-color: #c8c6c6fd; border-radius: 100px;">Build Wireframes and Low-Fidelity Prototypes</h6></span></div>
+
+    </div>
+    <div>
+        <a href="https://coursera.org/share/8616b43240d87eea0020e91e64154333">
+            <img class="h-auto max-w-full rounded-lg" src="ui__ux1024_1.png" alt="" >
+        </a>
+        <div> <span> <h6 class="flex  flex-col items-center mx-auto rounded" style="font-size: large; background-color: #c8c6c6fd; border-radius: 100px;"> Python Data Structure</h6></span></div>
+    </div>
+    <div>
+        <a href="https://coursera.org/share/e6f64ffafca722841c38ac87c98ad945">
+            <img class="h-auto max-w-full rounded-lg" src="programming1024_1.png" alt="" >
+        </a>
+        <div> <span> <h6 class="flex  flex-col items-center mx-auto rounded" style="font-size: large; background-color: #c8c6c6fd; border-radius: 100px;"> Python </h6></span></div>
+    </div>
+    <!-- <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+    </div> -->
+
+
+
+    <!-- <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+    </div> -->
+</div>
+
+    
+
+</div>
+
+<!-- card End -->
+
+</body>
+</html>

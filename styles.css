@@ -1,0 +1,22 @@
+
+  .circle-image {
+    border-radius: 60%;
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    /* Additional styling properties */
+
+    /* background-color: rgb(242, 255, 0); */
+  }
+ 
+  @font-face {
+    font-family: 'Rubik Puddles';
+    src: url('fonts/RubikPuddles-Regular.ttf') format('truetype');
+ 
+    font-weight: normal;
+    font-style: normal;
+  }
+
